@@ -161,7 +161,40 @@
                         </label>
                 </form>
             </td>
-            <td><img src="https://media.istockphoto.com/photos/sliced-smoked-turkey-sandwich-picture-id157428069?k=6&m=157428069&s=612x612&w=0&h=rP5Y4YQc5TLrc0zUJBf28O2wQE62paRJoXz4DvEW-M8=" width="150" height="150">
+
+            <td><a>
+            <div id="modal12" class="modal">
+                <div class="modal-background"></div>>
+                <div class="modal-card" id="sw12">
+                    <header class="modal-card-head">
+                        <p class="modal-card-head">Index Item 12 Description</p>
+                        
+                    </header>
+                    <section class="modal-card-body">
+                        Short Description
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button id="close12" class="button">Close</button>
+                    </footer>
+                </div>
+            </div>
+                <img id="swimg12" src="https://media.istockphoto.com/photos/sliced-smoked-turkey-sandwich-picture-id157428069?k=6&m=157428069&s=612x612&w=0&h=rP5Y4YQc5TLrc0zUJBf28O2wQE62paRJoXz4DvEW-M8=" width="150" height="150">
+                
+                <script type=text/javascript>
+                for (var x = 1; x < 13; x++)
+                    var img12 = document.getElementById("img" + x)
+                    var modalcontent12 = document.getElementById("sw12")
+                    img12.onclick = function(){
+                        modal12.style.display = "block";
+                        modalcontent12.src = this.src
+                    }
+                    var span = document.getElementsByClassName("button")[0];
+
+                    span.onclick = function(){
+                        modal12.style.display = "none";
+                    }
+
+                </script>
                 <br><p>Short Description:</p><br>
                 <form>
                         <label for="quantity">
