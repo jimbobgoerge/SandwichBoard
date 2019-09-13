@@ -223,7 +223,8 @@ function addnumber() {
 
 }
 
-var data = JSON.parse('{{user_file | safe}}');
+var silly_file = '{{user_file | tojson | safe}}'
+var data = JSON.parse(silly_file);
 
 for (var x = 0; x < 12; x++) {
     var img = document.getElementById("img" + x);
